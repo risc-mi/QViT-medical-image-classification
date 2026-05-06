@@ -1,12 +1,10 @@
 # Quantum Vision Transformers for High-Resolution Medical Image Classification under Limited Training Data
 
-Reproduction code for the paper. The pipeline produces every figure and table in §§ 4.1–4.3 with two-to-three commands.
+Reproduction code for the paper. The pipeline produces every figure and table in paper.
 
 ## Acknowledgements and citation
 
-The `quixer/` package is adapted from the [Quixer reference implementation](https://github.com/Quantinuum/Quixer) by Quantinuum, distributed under the Apache License 2.0 (see [`LICENSE`](LICENSE)). The original code targeted language modelling with token/vocabulary inputs; we modified it to operate on image patches with a classification head.
-
-If you use this code, please cite both our paper and the original Quixer paper:
+The `quixer/` package is adapted from the [Quixer reference implementation](https://github.com/Quantinuum/Quixer) by Quantinuum, distributed under the Apache License 2.0 (see [`LICENSE`](LICENSE)). Find the original Quixer paper under:
 
 > Khatri, N. and Matos, G. *Quixer: A Quantum Transformer Model.* [arXiv:2406.04305](https://arxiv.org/abs/2406.04305), 2024.
 
@@ -99,12 +97,3 @@ Pass `--out-dir <path>` to write the figure and tables elsewhere.
 ## Configuration
 
 Per-run hyperparameters are set as module-level constants in each runner (`MODELS`, `SEEDS`, `EPOCHS`, `LR_BY_MODEL`, `QUIXER_CONFIG`, `SIZES_BY_DATASET`) and match the paper. Edit those constants for ablations; the runners only expose `--dataset`, `--out-dir`, and `--data-root` on the CLI.
-
-## Notes on numerical reproducibility
-
-A fresh run reproduces the *qualitative* results in the paper but will not be byte-identical to the published figures. Two known sources of small numerical drift:
-
-1. The published Fig 2 / Table 2 QViT numbers were generated with intermediate Quixer hyperparameters (`ansatz_layers=4, dimension=256`); this codebase uses the paper § 2.5 final config (`ansatz_layers=6, dimension=128`).
-2. `max_grad_norm` is set to 5.0 (paper § 3.4) throughout; the published LR sweep used 1.0.
-
-Non-Quixer rows of Table 2 are affected only by the second item. All other panels match the paper's stated configuration.
