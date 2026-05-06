@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Test Balanced Accuracy (mean $\pm$ std) across datasets and sample sizes.}
+\label{tab:test_balacc}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Br35H} & $N = 50$ & $N = 100$ & $N = 500$ & $N = 1000$ & $N = 2400$ \\
+\midrule
+QViT & 0.7427 $\pm$ 0.0290 & 0.7873 $\pm$ 0.0236 & 0.8900 $\pm$ 0.0239 & 0.9273 $\pm$ 0.0074 & 0.9660 $\pm$ 0.0039 \\
+ResNet & \textbf{0.7673} $\pm$ 0.0236 & \textbf{0.8040} $\pm$ 0.0197 & \textbf{0.9213} $\pm$ 0.0045 & \textbf{0.9460} $\pm$ 0.0083 & \textbf{0.9720} $\pm$ 0.0062 \\
+Swin & 0.7493 $\pm$ 0.0191 & 0.7653 $\pm$ 0.0113 & 0.8813 $\pm$ 0.0120 & 0.9367 $\pm$ 0.0092 & 0.9713 $\pm$ 0.0058 \\
+DeiT & 0.7307 $\pm$ 0.0249 & 0.7733 $\pm$ 0.0186 & 0.8800 $\pm$ 0.0377 & 0.9147 $\pm$ 0.0150 & 0.9533 $\pm$ 0.0156 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Test AUC (mean $\pm$ std) across datasets and sample sizes.}
+\label{tab:test_auc}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{PneumoniaMNIST} & $N = 50$ & $N = 100$ & $N = 500$ & $N = 1000$ & $N = 4708$ \\
+\midrule
+QViT & 0.8860 $\pm$ 0.0236 & 0.9121 $\pm$ 0.0143 & 0.9192 $\pm$ 0.0053 & 0.9312 $\pm$ 0.0146 & 0.9419 $\pm$ 0.0053 \\
+ResNet & \textbf{0.9174} $\pm$ 0.0109 & \textbf{0.9208} $\pm$ 0.0131 & \textbf{0.9359} $\pm$ 0.0044 & \textbf{0.9418} $\pm$ 0.0034 & 0.9469 $\pm$ 0.0066 \\
+Swin & 0.8945 $\pm$ 0.0055 & 0.9016 $\pm$ 0.0080 & 0.9224 $\pm$ 0.0090 & 0.9305 $\pm$ 0.0183 & \textbf{0.9530} $\pm$ 0.0056 \\
+DeiT & 0.7973 $\pm$ 0.0241 & 0.8734 $\pm$ 0.0414 & 0.9163 $\pm$ 0.0147 & 0.9252 $\pm$ 0.0177 & 0.9478 $\pm$ 0.0052 \\
+\bottomrule
+\end{tabular}
+\end{table}

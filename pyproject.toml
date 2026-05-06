@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qvit-medical-imaging"
+version = "1.0.0"
+description = "Quantum Vision Transformers for High-Resolution Medical Image Classification under Limited Training Data — paper reproduction code."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "torch==2.3.0",
+    "torchvision==0.18.0",
+    "torchquantum>=0.1.8,<0.2",
+    "timm==1.0.25",
+    "medmnist>=3.0,<4.0",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "Pillow",
+]
+
+[tool.setuptools]
+packages = ["quixer"]
+py-modules = ["data_loading", "training"]

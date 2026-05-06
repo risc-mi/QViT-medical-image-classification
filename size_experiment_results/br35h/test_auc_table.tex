@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Test AUC (mean $\pm$ std) across datasets and sample sizes.}
+\label{tab:test_auc}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Br35H} & $N = 50$ & $N = 100$ & $N = 500$ & $N = 1000$ & $N = 2400$ \\
+\midrule
+QViT & 0.8184 $\pm$ 0.0140 & 0.8510 $\pm$ 0.0157 & 0.9525 $\pm$ 0.0078 & 0.9790 $\pm$ 0.0025 & 0.9901 $\pm$ 0.0048 \\
+ResNet & \textbf{0.8514} $\pm$ 0.0152 & \textbf{0.8969} $\pm$ 0.0181 & \textbf{0.9710} $\pm$ 0.0045 & \textbf{0.9821} $\pm$ 0.0036 & 0.9923 $\pm$ 0.0021 \\
+Swin & 0.8368 $\pm$ 0.0231 & 0.8589 $\pm$ 0.0255 & 0.9516 $\pm$ 0.0081 & 0.9809 $\pm$ 0.0018 & \textbf{0.9943} $\pm$ 0.0020 \\
+DeiT & 0.7789 $\pm$ 0.0331 & 0.8406 $\pm$ 0.0147 & 0.9411 $\pm$ 0.0295 & 0.9626 $\pm$ 0.0125 & 0.9887 $\pm$ 0.0085 \\
+\bottomrule
+\end{tabular}
+\end{table}

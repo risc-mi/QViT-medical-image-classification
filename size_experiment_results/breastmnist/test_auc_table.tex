@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Test AUC (mean $\pm$ std) across datasets and sample sizes.}
+\label{tab:test_auc}
+\begin{tabular}{lccc}
+\toprule
+\textbf{BreastMNIST} & $N = 50$ & $N = 100$ & $N = 546$ \\
+\midrule
+QViT & 0.6791 $\pm$ 0.0585 & 0.7783 $\pm$ 0.0254 & 0.8396 $\pm$ 0.0114 \\
+ResNet & \textbf{0.7673} $\pm$ 0.0205 & \textbf{0.7917} $\pm$ 0.0305 & \textbf{0.8745} $\pm$ 0.0085 \\
+Swin & 0.6711 $\pm$ 0.0433 & 0.7128 $\pm$ 0.0318 & 0.8115 $\pm$ 0.0296 \\
+DeiT & 0.6527 $\pm$ 0.0383 & 0.6917 $\pm$ 0.0501 & 0.7786 $\pm$ 0.0306 \\
+\bottomrule
+\end{tabular}
+\end{table}

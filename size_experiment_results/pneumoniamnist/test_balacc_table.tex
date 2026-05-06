@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Test Balanced Accuracy (mean $\pm$ std) across datasets and sample sizes.}
+\label{tab:test_balacc}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{PneumoniaMNIST} & $N = 50$ & $N = 100$ & $N = 500$ & $N = 1000$ & $N = 4708$ \\
+\midrule
+QViT & 0.7338 $\pm$ 0.0329 & 0.7861 $\pm$ 0.0416 & 0.7937 $\pm$ 0.0276 & \textbf{0.8276} $\pm$ 0.0227 & 0.8191 $\pm$ 0.0304 \\
+ResNet & 0.7612 $\pm$ 0.0562 & 0.7973 $\pm$ 0.0393 & 0.8093 $\pm$ 0.0247 & 0.8109 $\pm$ 0.0201 & 0.8130 $\pm$ 0.0126 \\
+Swin & \textbf{0.7796} $\pm$ 0.0346 & \textbf{0.8087} $\pm$ 0.0198 & 0.8119 $\pm$ 0.0251 & 0.8075 $\pm$ 0.0107 & \textbf{0.8443} $\pm$ 0.0052 \\
+DeiT & 0.7222 $\pm$ 0.0228 & 0.7909 $\pm$ 0.0235 & \textbf{0.8177} $\pm$ 0.0161 & 0.8199 $\pm$ 0.0158 & 0.7958 $\pm$ 0.0175 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Test Balanced Accuracy (mean $\pm$ std) across datasets and sample sizes.}
+\label{tab:test_balacc}
+\begin{tabular}{lccc}
+\toprule
+\textbf{BreastMNIST} & $N = 50$ & $N = 100$ & $N = 546$ \\
+\midrule
+QViT & 0.6212 $\pm$ 0.0247 & 0.6321 $\pm$ 0.0264 & 0.7504 $\pm$ 0.0173 \\
+ResNet & 0.6388 $\pm$ 0.0550 & \textbf{0.7183} $\pm$ 0.0316 & \textbf{0.7940} $\pm$ 0.0184 \\
+Swin & \textbf{0.6404} $\pm$ 0.0375 & 0.6599 $\pm$ 0.0398 & 0.7298 $\pm$ 0.0164 \\
+DeiT & 0.5812 $\pm$ 0.0338 & 0.6461 $\pm$ 0.0651 & 0.6967 $\pm$ 0.0271 \\
+\bottomrule
+\end{tabular}
+\end{table}
