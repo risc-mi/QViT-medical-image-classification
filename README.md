@@ -1,6 +1,6 @@
 # Quantum Vision Transformers for High-Resolution Medical Image Classification under Limited Training Data
 
-Reproduction code for the paper *Quantum Vision Transformers for High-Resolution Medical Image Classification under Limited Training Data*. The pipeline produces every figure and table in paper.
+Reproduction code for the paper *Quantum Vision Transformers for High-Resolution Medical Image Classification under Limited Training Data*. The pipeline produces every figure and table in the paper.
 
 ## Acknowledgements and citation
 
